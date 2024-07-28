@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="py-[14px] bg-[#F1F3F3] text-white">
+      <div class="container max-w-[1320px]">
+        <div class="pr-[4px] flex items-center justify-between">
+          <div>
+            <a
+              class="px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Market</a
+            >
+            <a
+              class="m-4 px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Pay</a
+            >
+          </div>
+          <div class="flex items-center gap-8">
+            <p class="text-zinc-500 text-[14px] pr-24">
+              Tarqatish punktigacha yetkazib berish bepul!
+            </p>
+            <a
+              class="px-2 py-[6px] rounded-md bg-[#009090] text-[14px] hover:bg-[#009090db] transition-all"
+              href=""
+              >Sello-da sotish</a
+            >
+            <select
+              class="text-zinc-500 bg-[#F1F3F3] hover:cursor-pointer outline-none hover:text-[#00B3A8] transition-all"
+            >
+              <option value="uz">O'zb</option>
+              <option value="rus">Rus</option>
+            </select>
+
+            <button class="flex items-center text-zinc-500 gap-2">
+              <i class="fa-solid fa-location-dot text-[#00B3A8]"></i>
+              <span class="hover:text-[#00B3A8] transition-all text-[14px]"
+                >Toshkent
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="sticky top-0 left-0 z-50 bg-white">
+      <div class="container max-w-[1320px]">
+        <div class="py-[16px] flex items-center">
+          <a class="pe-[48px]" href="./main.html">
+            <img
+              class="w-[174px] h-[44px]"
+              src="https://sello.uz/images/logo.svg"
+              alt="sello images"
+            />
+          </a>
+          <div class="pe-[24px]">
+            <button
+              class="flex items-center gap-2 border border-[#d8d8d878] px-[12px] py-[6px] rounded-md"
+            >
+              <img src="https://sello.uz/images/icn/menu.svg" alt="menu" />
+              <span class="text-zinc-800 hover:text-teal-600 transition-all"
+                >Katalog</span
+              >
+            </button>
+          </div>
+          <div class="pe-[48px] relative">
+            <form>
+              <input
+                class="w-[580px] py-[8px] px-[15px] rounded-s-md border border-[#d8d8d878] placeholder:text-[#D8D8D8] outline-none"
+                type="search"
+                aria-label="Search"
+                placeholder="Mahulotlar bo'yicha qidirish"
+              />
+              <button class="px-4 rounded-e-md bg-teal-600 absolute top-0">
+                <i
+                  class="fa-solid fa-magnifying-glass text-[20px] text-white py-[10.5px]"
+                ></i>
+              </button>
+            </form>
+          </div>
+
+          <ul
+            class="ml-14 text-center w-[80px] text-zinc-500 flex items-center gap-8"
+          >
+            <a class="hover:text-teal-600 transition-all" href="./like.html">
+              <li class="relative">
+                <span
+                  class="absolute -top-3 right-[10px] bg-yellow-500 text-white px-[6px] rounded-full text-[10px] hidden js-count"
+                ></span>
+                <i class="fa-solid fa-heart text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Sevimlilar</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./karzinka.html"
+            >
+              <li class="relative">
+                <span
+                  class="absolute -top-3 right-[2px] bg-red-500 text-white px-[6px] rounded-full text-[10px] js-karzinka-count"
+                ></span>
+                <i
+                  class="fa-solid fa-cart-shopping text-teal-500 text-[20px]"
+                ></i>
+                <span class="block text-[16px]">Savatcha</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./myprofil.html"
+            >
+              <li>
+                <i class="fa-regular fa-user text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Profil</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-t border-[#F1F3F3]" />
+      <div class="container max-w-[1320px]">
+        <ul class="py-4 flex items-center justify-between text-[16px]">
+          <li>
+            <a class="flex items-center" href="#">
+              <img src="https://sello.uz/images/icn/skidki.svg" alt="fire" />
+              <span class="font-[500] text-red-600">Chegirmalar</span>
+            </a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Elektronika</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Bolalar mahsulotlari</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Uy va bog'</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kiyim, poyabzal va aksessuarlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kitoblar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Brendlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Sotuvchilar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="py-8 flex items-center justify-between">
+              <div class="carousel relative w-[58%]">
+                <div
+                  class="carousel-inner relative overflow-hidden w-full rounded-md"
+                >
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fd94a809d86585583e932fbd2d0f6fcec.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240621%2F4c640322bae0cdf1578ea6c779da32e9.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fc492270fd64bfdbe6053795f083ca2a7.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240611%2F9e07582f5d321d4a0f7cd3af9d76722d.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240611%2F9e07582f5d321d4a0f7cd3af9d76722d.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[320px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240705%2Ff12fe1d6039fe20f37c05977582aedd7.jpeg&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="dots text-center absolute bottom-0 left-[40%] right-[40%]"
+                >
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="w-[42%] h-[320px] px-2">
+                <img
+                  class="w-full h-[320px] rounded-md"
+                  src="https://sello.uz/images/banner/r-banner-uz.png"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container max-w-[1320px]">
+          <div class="pt-8">
+            <div class="mb-2 flex items-center justify-between">
+              <h1 class="text-[27px] font-[600] text-zinc-800">
+                Eng ko'p sotiladigan mahsulotlar
+              </h1>
+              <a class="text-teal-600" href="#">Hammasini ko'rish</a>
+            </div>
+            <ul
+              class="flex items-center justify-start flex-wrap gap-[13px] js-pradict-text"
+            ></ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-8 py-6 bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="flex items-center justify-between">
+              <img
+                class="w-[49%] rounded-lg"
+                src="./images/perla.webp"
+                alt="perla"
+              />
+              <img
+                class="w-[49%] rounded-lg"
+                src="./images/samsung.webp"
+                alt="samsung"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template class="js-main-template">
+      <li class="p-[5px] border-2 w-[205px] rounded-lg text-zinc-600 relative">
+        <button
+          class="p-[5px] absolute right-3 top-3 bg-white rounded-full js-unlike-btn"
+        >
+          <img class="w-6 like_no" src="./images/heart-primary.svg" alt="" />
+          <img class="w-6 hidden like_yes" src="./images/heart.svg" alt="" />
+        </button>
+        <div
+          class="m-auto w-full p-[5px] h-[180px] bg-[#F0F2F2] rounded-xl hover:p-0 transition-all cursor-pointer"
+        >
+          <img class="m-auto h-full rounded-md js-product-img" src="" alt="" />
+        </div>
+        <div class="px-1">
+          <h3 class="mt-3 font-semibold text-black js-product-name"></h3>
+          <p class="h-[70px] text-[15px] leading-5 js-product-desc"></p>
+          <p class="flex items-center justify-between">
+            <del class="text-[12px]">1,640,000 so'm</del
+            ><span
+              class="px-2 py-1 rounded-full bg-[#D72838] text-white text-[12px]"
+              >-15%</span
+            >
+          </p>
+          <strong class="block text-black js-product-price"></strong>
+          <button
+            class="w-full mt-3 px-3 py-1 bg-[#008385] rounded-md text-[14px] text-white hover:bg-[#008385ec] transition-all flex items-center justify-center gap-2 js-karzinka"
+          >
+            Savatchaga
+            <i class="fa-solid fa-arrow-right-long hidden js-arrow"></i>
+            <span
+              class="border border-white px-[5px] rounded-[4px] hidden js-karzinka-count"
+              >1</span
+            >
+          </button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

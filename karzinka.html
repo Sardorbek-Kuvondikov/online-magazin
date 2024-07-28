@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>karzinka</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="py-[14px] bg-[#F1F3F3] text-white">
+      <div class="container max-w-[1320px]">
+        <div class="flex items-center justify-between">
+          <div>
+            <a
+              class="px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Market</a
+            >
+            <a
+              class="m-4 px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Pay</a
+            >
+          </div>
+          <div class="flex items-center gap-8">
+            <p class="text-zinc-500 text-[14px] pr-24">
+              Tarqatish punktigacha yetkazib berish bepul!
+            </p>
+            <a
+              class="px-2 py-[6px] rounded-md bg-[#009090] text-[14px] hover:bg-[#009090db] transition-all"
+              href=""
+              >Sello-da sotish</a
+            >
+            <select
+              class="text-zinc-500 bg-[#F1F3F3] hover:cursor-pointer outline-none hover:text-[#00B3A8] transition-all"
+            >
+              <option value="uz">O'zb</option>
+              <option value="rus">Rus</option>
+            </select>
+
+            <button class="flex items-center text-zinc-500 gap-2">
+              <i class="fa-solid fa-location-dot text-[#00B3A8]"></i>
+              <span class="hover:text-[#00B3A8] transition-all text-[14px]"
+                >Toshkent
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="sticky top-0 left-0 z-50 bg-white">
+      <div class="container max-w-[1320px]">
+        <div class="py-[16px] flex items-center">
+          <a class="pe-[48px]" href="./main.html">
+            <img
+              class="w-[174px] h-[44px]"
+              src="https://sello.uz/images/logo.svg"
+              alt="sello images"
+            />
+          </a>
+          <div class="pe-[24px]">
+            <button
+              class="flex items-center gap-2 border border-[#d8d8d878] px-[12px] py-[6px] rounded-md"
+            >
+              <img src="https://sello.uz/images/icn/menu.svg" alt="menu" />
+              <span class="text-zinc-800 hover:text-teal-600 transition-all"
+                >Katalog</span
+              >
+            </button>
+          </div>
+          <div class="pe-[48px] relative">
+            <form class="js-search">
+              <input
+                class="w-[620px] py-[8px] px-[15px] rounded-s-md border border-[#d8d8d878] placeholder:text-[#D8D8D8] outline-none js-search-inp"
+                type="search"
+                aria-label="Search"
+                placeholder="Mahulotlar bo'yicha qidirish"
+              />
+              <button class="px-4 rounded-e-md bg-teal-600 absolute top-0">
+                <i
+                  class="fa-solid fa-magnifying-glass text-[20px] text-white py-[10.5px]"
+                ></i>
+              </button>
+            </form>
+          </div>
+
+          <ul
+            class="ml-14 text-center w-[80px] text-zinc-500 flex items-center gap-8"
+          >
+            <a class="hover:text-teal-600 transition-all" href="./like.html">
+              <li class="relative">
+                <span
+                  class="absolute -top-3 right-[10px] bg-yellow-500 text-white px-[6px] rounded-full text-[10px] js-count"
+                  >1</span
+                >
+                <i class="fa-solid fa-heart text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Sevimlilar</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./karzinka.html"
+            >
+              <li class="relative">
+                <span
+                  class="absolute -top-3 right-[2px] bg-red-500 text-white px-[6px] rounded-full text-[10px] hidden js-karzinka-counts"
+                ></span>
+                <i
+                  class="fa-solid fa-cart-shopping text-teal-500 text-[20px]"
+                ></i>
+                <span class="block text-[16px]">Savatcha</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./myprofil.html"
+            >
+              <li>
+                <i class="fa-regular fa-user text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Profil</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-t border-[#F1F3F3]" />
+      <div class="container max-w-[1320px]">
+        <ul class="py-4 flex items-center justify-between text-[16px]">
+          <li>
+            <a class="flex items-center" href="#">
+              <img src="https://sello.uz/images/icn/skidki.svg" alt="fire" />
+              <span class="font-[500] text-red-600">Chegirmalar</span>
+            </a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Elektronika</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Bolalar mahsulotlari</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Uy va bog'</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kiyim, poyabzal va aksessuarlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kitoblar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Brendlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Sotuvchilar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="p-5 bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="text-[16px] text-zinc-500 flex items-center">
+              <p class="hover:text-teal-600 transition-all cursor-pointer">
+                Asosy
+              </p>
+              <button class="bg-zinc-400 w-[2.5px] h-[14px] mx-2"></button>
+              <span class="hover:text-teal-600 transition-all cursor-pointer"
+                >savatcha</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container max-w-[1320px]">
+          <div class="mt-10 flex gap-8">
+            <div class="w-[60%] p-4 border rounded-lg">
+              <div class="flex items-center justify-between">
+                <h2 class="text-3xl">Savatcha</h2>
+                <p class="p-2 bg-[#F1FCFB] rounded-md text-zinc-500">
+                  Yetkazib berish Sello Logistics xizmati tomonidan amalga
+                  oshiriladi
+                </p>
+              </div>
+              <span class="mt-4 block text-end text-zinc-500 js-tovar-count"
+                >maxsulot yo'q!</span
+              >
+              <ul
+                class="items-center justify-between text-zinc-400 js-karzinki-data"
+              >
+                <li>
+                  <img
+                    class="w-[300px]"
+                    src="./images/empty-card.svg"
+                    alt="empty-card"
+                  />
+                </li>
+                <li>
+                  <h3 class="text-xl text-black">Savatcha 0</h3>
+                  <span class="mb-5 block"
+                    >Kechirasiz! Hozirda savatchangiz bo'sh</span
+                  >
+                  <p class="block mb-5">
+                    Нажмите на кнопку ниже, чтобы начать делать покупки
+                  </p>
+                  <a
+                    class="p-3 px-12 rounded-lg bg-teal-600 text-white"
+                    href="./main.html"
+                    >Tovat qo'shish</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="flex items-center justify-start flex-wrap gap-[13px] js-karzinka-text"
+              ></ul>
+            </div>
+            <div class="w-[40%] border rounded-lg p-5">
+              <h2 class="text-xl">Buyutma</h2>
+              <ul class="mt-2">
+                <li class="flex items-center justify-between">
+                  <p class="text-[14px] text-zinc-500">Tavar soni:</p>
+                  <span class="text-zinc-500 js-goods-number">0</span>
+                </li>
+                <li class="mb-4 flex items-center justify-between">
+                  <p class="text-[14px] text-zinc-500">Umumiy narxi:</p>
+                  <span class="text-zinc-600 js-all-sum">0</span>
+                </li>
+                <hr />
+                <li class="mt-6">
+                  <button class="w-full bg-teal-600 text-white p-2 rounded-md">
+                    Buyurtma berish
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-12 py-12 bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="div">
+              <img
+                class="rounded-lg"
+                src="./images/podvall4-uz.png"
+                alt="podvall4-uz"
+              />
+              <div
+                class="mt-12 py-10 px-8 rounded-lg shadow-md bg-white flex items-center justify-between"
+              >
+                <p class="text-[19px]">
+                  Chegirmalar va aksiyalardan xabardor bo'lish uchun obuna
+                  bo'ling!
+                </p>
+                <form
+                  class="w-[50%] p-1 rounded-lg flex items-center gap-5 border"
+                >
+                  <input
+                    class="w-full p-3 outline-none"
+                    type="email"
+                    aria-label="email adres"
+                    placeholder="Elektron pochta manzilingizni kiriting"
+                  />
+                  <button
+                    class="p-3 px-10 rounded-lg text-white bg-[#005F61] hover:bg-[#005f61d7] transition-all"
+                  >
+                    Yuborish
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template class="js-karzinka-template">
+      <li class="w-full mt-2 flex items-center gap-5 border p-4 rounded-md">
+        <div class="w-[120px] h-[120px] py-[10px] px-2 bg-zinc-100 rounded-md">
+          <img class="w-full h-full rounded-md js-karzinka-img" src="" alt="" />
+        </div>
+        <div>
+          <h3 class="js-karzinka-name"></h3>
+          <p class="text-zinc-600 js-karzinka-desc"></p>
+          <span class="text-lg text-teal-600 js-karzinka-price"></span>
+          <div class="flex items-center gap-4">
+            <button class="flex items-center gap-1 js-karzinkato-like">
+              <i class="fa-regular fa-heart text-zinc-500"></i>
+              <p class="text-[12px] text-zinc-500 hover:text-teal-600">
+                Sevimlilarga qo'shish
+              </p>
+            </button>
+            <button class="text-red-600 js-karzinka-delete">
+              <i class="fa-solid fa-x"></i>
+              <span>O'chirish</span>
+            </button>
+          </div>
+        </div>
+      </li>
+    </template>
+    <script src="./js/karzinka.js"></script>
+  </body>
+</html>

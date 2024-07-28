@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carusel</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <style>
+      .carousel-item.active {
+        opacity: 1;
+        position: relative;
+      }
+      .carousel-item {
+        opacity: 0;
+        position: absolute;
+      }
+      .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .dot.active {
+        background-color: #717171;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel relative w-full max-w-md mx-auto">
+      <div class="carousel-inner relative overflow-hidden w-full">
+        <div
+          class="carousel-item absolute opacity-0"
+          style="transition: opacity 1s"
+        >
+          <img
+            class="w-full"
+            src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fd94a809d86585583e932fbd2d0f6fcec.png&w=1200&q=75"
+            alt="img"
+          />
+        </div>
+        <div
+          class="carousel-item absolute opacity-0"
+          style="transition: opacity 1s"
+        >
+          <img
+            class="w-full"
+            src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240621%2F4c640322bae0cdf1578ea6c779da32e9.png&w=1200&q=75"
+            alt="img"
+          />
+        </div>
+        <div
+          class="carousel-item absolute opacity-0"
+          style="transition: opacity 1s"
+        >
+          <img
+            class="w-full"
+            src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fc492270fd64bfdbe6053795f083ca2a7.png&w=1200&q=75"
+            alt="img"
+          />
+        </div>
+      </div>
+      <div class="dots text-center mt-4">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      const items = document.querySelectorAll(".carousel-item");
+      const dots = document.querySelectorAll(".dot");
+      let currentItem = 0;
+      const totalItems = items.length;
+      const intervalTime = 4000; // 3 seconds
+      let autoSlide;
+
+      function showSlide(index) {
+        items.forEach((item, i) => {
+          item.classList.remove("active");
+          dots[i].classList.remove("active");
+          if (i === index) {
+            item.classList.add("active");
+            dots[i].classList.add("active");
+          }
+        });
+        currentItem = index;
+        resetAutoSlide();
+      }
+
+      function nextSlide() {
+        currentItem = (currentItem + 1) % totalItems;
+        showSlide(currentItem);
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlide);
+        autoSlide = setInterval(nextSlide, intervalTime);
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          showSlide(index);
+        });
+      });
+
+      items[currentItem].classList.add("active");
+      dots[currentItem].classList.add("active");
+      autoSlide = setInterval(nextSlide, intervalTime);
+    </script>
+  </body>
+</html>

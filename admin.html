@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adminka</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="py-[14px] bg-[#F1F3F3] text-white">
+      <div class="container max-w-[1320px]">
+        <div class="pr-[4px] flex items-center justify-between">
+          <div>
+            <a
+              class="px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Market</a
+            >
+            <a
+              class="m-4 px-[24px] py-2 rounded-md bg-[#00B3A8] text-[14px]"
+              href=""
+              >Sello Pay</a
+            >
+          </div>
+          <div class="flex items-center gap-8">
+            <p class="text-zinc-500 text-[14px] pr-24">
+              Tarqatish punktigacha yetkazib berish bepul!
+            </p>
+            <a
+              class="px-2 py-[6px] rounded-md bg-[#009090] text-[14px] hover:bg-[#009090db] transition-all"
+              href=""
+              >Sello-da sotish</a
+            >
+            <select
+              class="text-zinc-500 bg-[#F1F3F3] hover:cursor-pointer outline-none hover:text-[#00B3A8] transition-all"
+            >
+              <option value="uz">O'zb</option>
+              <option value="rus">Rus</option>
+            </select>
+
+            <button class="flex items-center text-zinc-500 gap-2">
+              <i class="fa-solid fa-location-dot text-[#00B3A8]"></i>
+              <span class="hover:text-[#00B3A8] transition-all text-[14px]"
+                >Toshkent
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="sticky top-0 left-0 z-[100] bg-white">
+      <div class="container max-w-[1320px]">
+        <div
+          class="p-2 px-10 rounded-md bg-red-600 text-white absolute top-10 right-5 transition-all hidden"
+          id="deleted_text"
+        >
+          <span class="mr-2">deleted</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div
+          class="p-2 px-10 rounded-md bg-emerald-500 text-white absolute top-10 right-5 z-[200] transition-all hidden"
+          id="edited_text"
+        >
+          <span class="mr-2">edited</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="py-[16px] flex items-center">
+          <a class="pe-[48px]" href="./main.html">
+            <img
+              class="w-[174px] h-[44px]"
+              src="https://sello.uz/images/logo.svg"
+              alt="sello images"
+            />
+          </a>
+          <div class="pe-[24px]">
+            <button
+              class="flex items-center gap-2 border border-[#d8d8d878] px-[12px] py-[6px] rounded-md"
+            >
+              <img src="https://sello.uz/images/icn/menu.svg" alt="menu" />
+              <span class="text-zinc-800 hover:text-teal-600 transition-all"
+                >Katalog</span
+              >
+            </button>
+          </div>
+          <div class="pe-[48px] relative">
+            <form>
+              <input
+                class="w-[580px] py-[8px] px-[15px] rounded-s-md border border-[#d8d8d878] placeholder:text-[#D8D8D8] outline-none"
+                type="search"
+                aria-label="Search"
+                placeholder="Mahulotlar bo'yicha qidirish"
+              />
+              <button class="px-4 rounded-e-md bg-teal-600 absolute top-0">
+                <i
+                  class="fa-solid fa-magnifying-glass text-[20px] text-white py-[10.5px]"
+                ></i>
+              </button>
+            </form>
+          </div>
+
+          <ul
+            class="ml-14 text-center w-[80px] text-zinc-500 flex items-center gap-8"
+          >
+            <a class="hover:text-teal-600 transition-all" href="./like.html">
+              <li>
+                <i class="fa-solid fa-heart text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Sevimlilar</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./karzinka.html"
+            >
+              <li class="relative">
+                <span
+                  class="absolute -top-2 right-[6px] bg-teal-500 text-white p-[4px] rounded-full text-[10px] hidden js-karzinka-count"
+                ></span>
+                <i
+                  class="fa-solid fa-cart-shopping text-teal-500 text-[20px]"
+                ></i>
+                <span class="block text-[16px]">Savatcha</span>
+              </li>
+            </a>
+            <a
+              class="hover:text-teal-600 transition-all"
+              href="./myprofil.html"
+            >
+              <li>
+                <i class="fa-regular fa-user text-teal-500 text-[20px]"></i>
+                <span class="block text-[16px]">Profil</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-t border-[#F1F3F3]" />
+      <div class="container max-w-[1320px]">
+        <ul class="py-4 flex items-center justify-between text-[16px]">
+          <li>
+            <a class="flex items-center" href="#">
+              <img src="https://sello.uz/images/icn/skidki.svg" alt="fire" />
+              <span class="font-[500] text-red-600">Chegirmalar</span>
+            </a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Elektronika</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Bolalar mahsulotlari</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Uy va bog'</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kiyim, poyabzal va aksessuarlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Kitoblar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Brendlar</a>
+          </li>
+          <li
+            class="text-zinc-700 hover:text-teal-600 cursor-pointer transition-all"
+          >
+            <a href="#">Sotuvchilar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="py-4 flex items-center justify-between">
+              <div class="carousel relative w-[58%]">
+                <div
+                  class="carousel-inner relative overflow-hidden w-full rounded-md"
+                >
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fd94a809d86585583e932fbd2d0f6fcec.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240621%2F4c640322bae0cdf1578ea6c779da32e9.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240715%2Fc492270fd64bfdbe6053795f083ca2a7.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240611%2F9e07582f5d321d4a0f7cd3af9d76722d.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240611%2F9e07582f5d321d4a0f7cd3af9d76722d.png&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                  <div
+                    class="carousel-item absolute opacity-0"
+                    style="transition: opacity 1s"
+                  >
+                    <img
+                      class="w-full h-[280px]"
+                      src="https://sello.uz/_next/image?url=https%3A%2F%2Fstatic.sello.uz%2Funsafe%2F750x310%2Fhttps%3A%2F%2Fstatic.sello.uz%2F%2Ffm%2F20240705%2Ff12fe1d6039fe20f37c05977582aedd7.jpeg&w=1200&q=75"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="dots text-center absolute bottom-0 left-[40%] right-[40%]"
+                >
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="w-[42%] h-[280px] px-2">
+                <img
+                  class="w-full h-[280px] rounded-md"
+                  src="https://sello.uz/images/banner/r-banner-uz.png"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container max-w-[1320px]">
+          <div class="mt-10 flex justify-between">
+            <div class="w-[40%] p-5 rounded-md shadow-lg">
+              <div class="mb-6">
+                <h1 class="text-2xl text-zinc-600">Yangi tavar qo'shish.</h1>
+                <p class="text-[14px] text-zinc-600">
+                  Agar siz admin bo'lsangiz sotuvga kelgan yangi tovarlarni
+                  qo'shishingiz mumkim.
+                </p>
+              </div>
+              <form class="text-center js-admin-form">
+                <input
+                  class="w-full p-2 outline-none border border-teal-600 rounded-md placeholder:text-zinc-400 js-product-name"
+                  type="text"
+                  aria-label="product name"
+                  placeholder="Product Name"
+                  required
+                />
+                <textarea
+                  class="w-full my-3 p-2 border border-teal-600 rounded-md placeholder:text-zinc-400 outline-none block js-product-desc"
+                  aria-label="product desc"
+                  placeholder="Product Desc"
+                  required
+                ></textarea>
+                <input
+                  class="w-full p-2 outline-none border border-teal-600 rounded-md placeholder:text-zinc-400 js-product-price"
+                  type="text"
+                  aria-label="product price"
+                  placeholder="Product Price"
+                  required
+                />
+                <input
+                  class="w-full my-3 p-2 border border-teal-600 bg-white rounded-md outline-none block js-product-img"
+                  type="file"
+                  aria-label="product img"
+                  placeholder="Product Img"
+                />
+                <button
+                  class="p-2 mt-4 px-10 bg-[#008385] text-white rounded-md shadow-lg hover:bg-[#008385e6] transition-all"
+                  type="submit"
+                >
+                  Tavar qo'shish
+                </button>
+              </form>
+            </div>
+
+            <div class="w-[60%] px-6">
+              <h2 class="mb-2 text-center text-2xl">
+                Yangi qo'shilgan mahsulotlar
+              </h2>
+              <ul
+                class="flex items-center justify-start flex-wrap gap-3 js-lot-text"
+              ></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container max-w-[1320px]">
+          <div class="mt-12">
+            <div class="mb-2 flex items-center justify-between">
+              <h1 class="text-[27px] font-[600] text-zinc-800">
+                Eng ko'p sotiladigan mahsulotlar
+              </h1>
+              <a class="text-teal-600" href="#">Hammasini ko'rish</a>
+            </div>
+            <ul
+              class="flex items-center justify-start flex-wrap gap-[13px] gap-y-4 js-pradict-text"
+            ></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATA EDIT MODAL -->
+      <section>
+        <div class="container max-w-[1320px]">
+          <!-- Modal -->
+          <div
+            class="fixed inset-0 bg-gray-600 bg-opacity-50 {flex} items-center justify-center hidden z-[110] js-modal"
+          >
+            <div
+              class="bg-white w-11/12 md:max-w-md mx-auto rounded-lg shadow-lg z-50 overflow-y-auto"
+            >
+              <div class="py-4 text-left px-6 relative">
+                <!-- Modal Header -->
+                <div class="mb-8 flex items-center justify-between">
+                  <h2 class="text-2xl">Maxsulotni o'zgartirish</h2>
+                  <button
+                    class="px-4 py-1 rounded-es-md bg-red-600 absolute top-0 right-0 js-none-modal"
+                  >
+                    <i class="fa-solid fa-x text-white"></i>
+                  </button>
+                </div>
+
+                <!-- Modal Form -->
+                <form class="text-center js-edit-admin-form">
+                  <input
+                    class="w-full p-2 outline-none border border-teal-600 rounded-md placeholder:text-zinc-400 js-edit-product-name"
+                    type="text"
+                    aria-label="product name"
+                    placeholder="Product Name"
+                    required
+                  />
+                  <textarea
+                    class="w-full my-3 p-2 border border-teal-600 rounded-md placeholder:text-zinc-400 outline-none block js-edit-product-desc"
+                    aria-label="product desc"
+                    placeholder="Product Desc"
+                    required
+                  ></textarea>
+                  <input
+                    class="w-full p-2 outline-none border border-teal-600 rounded-md placeholder:text-zinc-400 js-edit-product-price"
+                    type="text"
+                    aria-label="product price"
+                    placeholder="Product Price"
+                    required
+                  />
+                  <input
+                    class="w-full my-3 p-2 border border-teal-600 bg-white rounded-md outline-none block js-edit-product-img"
+                    type="file"
+                    aria-label="product img"
+                    placeholder="Product Img"
+                  />
+                  <button
+                    class="p-2 mt-4 px-10 bg-[#008385] text-white rounded-md hover:bg-[#008385de] transition-all js-edited-btn"
+                    type="submit"
+                  >
+                    <i class="fa-solid fa-pen mr-2"></i>
+                    Taxrirlash
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-8 py-6 bg-[#F1F3F3]">
+          <div class="container max-w-[1320px]">
+            <div class="flex items-center justify-between">
+              <img
+                class="w-[49%] rounded-lg"
+                src="./images/perla.webp"
+                alt="perla"
+              />
+              <img
+                class="w-[49%] rounded-lg"
+                src="./images/samsung.webp"
+                alt="samsung"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template class="js-lot-template">
+      <li
+        class="p-[3px] border-2 w-[135px] min-h-[265px] rounded-lg text-zinc-600 relative"
+      >
+        <div
+          class="m-auto w-full p-[5px] h-[110px] bg-[#F0F2F2] rounded-xl hover:p-[3px] transition-all cursor-pointer"
+        >
+          <img
+            class="m-auto h-full rounded-md js-lot-img"
+            src="https://static.sello.uz/unsafe/x180/https://static.sello.uz/fm/20240319/b419b147ee920358049db7ac27e9b2f7.webp"
+            alt="tovar img"
+          />
+        </div>
+        <div>
+          <h3 class="mt-1 font-semibold text-black text-[13px] js-lot-name">
+            EPA EMVD-165
+          </h3>
+          <p class="mt-1 h-[60px] text-[14px] leading-4 js-lot-desc">
+            Yuqori bosimli yuvish mashinasi EPA EMVD-165
+          </p>
+          <p class="flex items-center justify-between">
+            <del class="text-[10px]">original so'm</del
+            ><span
+              class="px-1 pt-[1px] rounded-full bg-[#D72838] text-white text-[10px]"
+              >-0%</span
+            >
+          </p>
+          <strong class="block text-black text-[14px] js-lot-price"
+            >1,408,000 so'm</strong
+          >
+        </div>
+      </li>
+    </template>
+
+    <template class="js-admin-template">
+      <li class="p-[5px] border-2 w-[205px] rounded-lg text-zinc-600 relative">
+        <div
+          class="m-auto w-full p-[5px] h-[180px] bg-[#F0F2F2] rounded-xl hover:p-0 transition-all cursor-pointer"
+        >
+          <img class="m-auto h-full rounded-md js-product-img" src="" alt="" />
+        </div>
+        <div class="px-1">
+          <h3 class="mt-3 font-semibold text-black js-product-name"></h3>
+          <p class="h-[70px] text-[15px] leading-5 js-product-desc"></p>
+          <p class="flex items-center justify-between">
+            <del class="text-[12px]">original so'm</del
+            ><span
+              class="px-2 py-1 rounded-full bg-[#D72838] text-white text-[12px]"
+              >-0%</span
+            >
+          </p>
+          <strong class="block text-black js-product-price"></strong>
+          <div class="flex items-center gap-6">
+            <button
+              class="w-full mt-3 px-2 py-1 bg-red-600 rounded-md text-[14px] text-white hover:bg-red-500 transition-all js-delete-btn"
+            >
+              <i class="fa-solid fa-trash"></i>
+              Delete
+            </button>
+            <button
+              class="w-full mt-3 px-2 py-1 bg-[#008385] rounded-md text-[14px] text-white hover:bg-[#008385ec] transition-all js-edit-btn"
+            >
+              <i class="fa-regular fa-pen-to-square"></i>
+              Edit
+            </button>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

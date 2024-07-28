@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body
+    class="bg-cover bg-fixed bg-no-repeat font-[itim]"
+    style="background-image: url(./images/bg.png)"
+  >
+    <div class="container max-w-[1320px]">
+      <div class="mt-36 flex items-center justify-center gap-16">
+        <div>
+          <img class="w-[280px]" src="./images/acc.png" alt="user account" />
+        </div>
+        <div class="w-[400px] p-5 rounded-md bg-[#dccfeb8f]">
+          <h2 class="pb-8 text-center text-4xl text-[#6229c5]">Klent Login</h2>
+          <form class="js-login-form" autocomplete="off">
+            <input
+              class="w-full mb-5 p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-login-email"
+              type="email"
+              name="email"
+              aria-label="your email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="w-full p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-login-password"
+              type="password"
+              name="password"
+              aria-label="your password"
+              placeholder="Password"
+              required
+            />
+            <button
+              class="my-6 p-2 px-14 block m-auto rounded-full bg-[#6D30D4] text-white hover:shadow-lg transition-all"
+              type="submit"
+            >
+              Login
+            </button>
+            <p class="text-center text-lg">
+              Yangi hisob yaratish.
+              <a
+                class="text-[#6D30D4] text-xl font-semibold rounded-full px-2 hover:bg-[#dccfeb8f] transition-all"
+                href="./register.html"
+                >Register</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/login.js"></script>
+</html>

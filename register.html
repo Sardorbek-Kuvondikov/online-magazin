@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body
+    class="bg-cover bg-fixed bg-no-repeat font-[itim]"
+    style="background-image: url(./images/bg.png)"
+  >
+    <div class="container max-w-[1320px]">
+      <div class="mt-28 flex items-center justify-center gap-16">
+        <div>
+          <img class="w-[300px]" src="./images/acc.png" alt="user account" />
+        </div>
+        <div class="w-[400px] p-5 rounded-md bg-[#dccfeb8f]">
+          <h2 class="pb-8 text-center text-4xl text-[#6229c5]">
+            Klent Register
+          </h2>
+          <form class="js-register-form" autocomplete="off">
+            <input
+              class="w-full p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-name"
+              type="text"
+              aria-label="user name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="w-full my-5 p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-phone"
+              type="tel"
+              aria-label="user phone"
+              placeholder="Phone number"
+              pattern="^\+?[0-9\s\-]{7,15}$"
+              required
+            />
+            <input
+              class="w-full p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-email"
+              type="email"
+              aria-label="user email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="w-full mt-5 p-2 rounded-md outline-none border-b-[3px] border-[#6c30d4] shadow-box-shadow js-password"
+              type="password"
+              aria-label="user password"
+              placeholder="Password"
+              required
+            />
+            <button
+              class="my-6 p-2 px-14 block m-auto rounded-full bg-[#6D30D4] text-white hover:shadow-lg transition-all"
+              type="submit"
+            >
+              Register
+            </button>
+            <p class="text-center text-lg">
+              Sizning hisobingiz bormi?
+              <a
+                class="text-[#6D30D4] text-xl font-semibold rounded-full px-2 hover:bg-[#dccfeb8f] transition-all"
+                href="./login.html"
+                >Login</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/register.js"></script>
+</html>
