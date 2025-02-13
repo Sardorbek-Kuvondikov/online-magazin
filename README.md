@@ -4,4 +4,4 @@ Backent serverga qo'yilmaganligi sababli bu loyhaning to'liq ko'rib bo'lmaydi, l
 
 ---
 
-hozirda backend serverga joylanmagan !
+hozirda backend serverga joylanmagan!!!`
